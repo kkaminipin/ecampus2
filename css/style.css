@@ -9,6 +9,19 @@
 .section-right {
   width: 425px;
 }
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  border-bottom: 1px solid #d8dadb;
+  margin-bottom: 4.5px;
+}
+.section-title button {
+  border: none;
+  background: none;
+}
 
 .myClass {
   display: flex;
@@ -34,17 +47,10 @@
   color: #fff;
 }
 .myClass .yearRecord div {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 0;
-  border-bottom: 1px solid #374a81;
-  margin-bottom: 4.5px;
+  border-color: #374a81;
 }
-.myClass .yearRecord button {
-  border: none;
-  background: none;
+.myClass .yearRecord button img {
+  fill: #c7d0df;
 }
 .myClass .yearRecord dl {
   display: flex;
@@ -75,6 +81,7 @@
   height: 168px;
   background: #fff;
   box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #cac7c0;
 }
 .myClass .myClassList .MCItem > * {
   display: flex;
@@ -108,14 +115,83 @@
 }
 .myClass .myClassList .MCItem .MC_bottom div span {
   font-size: 13px;
+  letter-spacing: -0.94px;
 }
 .myClass .myClassList .MCItem .MC_bottom div p {
   font-size: 22px;
   font-weight: bold;
-  height: 17px;
 }
 .myClass .myClassList .MCItem .MC_bottom div p.ko {
   font-size: 17px;
+  height: 21px;
+}
+
+.weekClass {
+  background: #fff;
+  padding: 7px 35px;
+}
+.weekClass .section-title img {
+  color: #a7a7a7;
+}
+.weekClass .bookArea {
+  padding: 12.5px 15px 17px 0;
+  display: flex;
+}
+.weekClass .bookArea .imgBox {
+  margin-right: 25px;
+}
+.weekClass .bookArea .imgBox img {
+  border: 1px solid #bfbfbf;
+}
+.weekClass p {
+  word-break: keep-all;
+  letter-spacing: -0.7px;
+}
+.weekClass .titleArea {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #003875;
+}
+.weekClass .detailArea {
+  font-size: 14px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+  color: #626262;
+}
+.weekClass ul li {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #ededed;
+}
+.weekClass ul li:first-child {
+  padding-top: 5px;
+  border: none;
+}
+.weekClass ul li a {
+  color: #626262;
+  display: inline-flex;
+}
+.weekClass ul li a .new {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background: #ff4949;
+  color: #fff;
+  font-size: 10px;
+  margin-left: 7px;
+  padding-bottom: 1px;
+}
+
+.section2 .section-title {
+  font-size: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
