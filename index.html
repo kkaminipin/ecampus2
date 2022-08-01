@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <div class="headerWrap">
-            <div class="myInfo">
+            <div class="header_top">
                 <p>홍길동님 안녕하세요</p>
                 <select>
                     <option selected>학습자</option>
@@ -34,22 +35,64 @@
                     <img src="img/search.png" alt="검색버튼">
                 </button>
             </div>
-            <div class="headerLogo">
-                <img src="img/logo.png" alt="eCampus 로고">
+            <div class="header_bottom">
+                <div class="headerLogo">
+                    <img src="img/logo.png" alt="eCampus 로고">
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">진단및계획수립</a>
+                            <ul class="sub_nav none">
+                                <li><a href="#">CDP</a></li>
+                                <li><a href="#">역량진단</a></li>
+                                <li><a href="#">IDP(학습계획수립)</a></li>
+                                <li><a href="#">부서장피드백</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">수강신청</a>
+                            <ul class="sub_nav left">
+                                <li><a href="#">과정검색</a></li>
+                                <li><a href="#">외부위탁교육</a></li>
+                                <li><a href="#">사내어학검정 or 어학평가</a></li>
+                                <li><a href="#">사외 어학/자격증신청</a></li>
+                                <li><a href="#">기타학점신청</a></li>
+                                <li><a href="#">부서원수강승인</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학습방</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">학습중인과정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학습커뮤니티</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">컨텐츠</a></li>
+                                <li><a href="#">CoP</a></li>
+                                <li><a href="#">전문가정보조회</a></li>
+                                <li><a href="#">열린학습</a></li>
+                                <li><a href="#">Daily외국어</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">교육통계</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">나의학습</a></li>
+                                <li><a href="#">부서원학습</a></li>
+                                <li><a href="#">구성원학습</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav">
-                <li><a href="#">진단및계획수립</a></li>
-                <li><a href="#">수강신청</a></li>
-                <li><a href="#">학습방</a></li>
-                <li><a href="#">학습커뮤니티</a></li>
-                <li><a href="#">교육통계</a></li>
-            </ul>
+            <div class="subnav">
+            </div>
         </div>
     </header>
     <div class="section section1">
         <div class="sectionWrap">
-            <div class="float-left myClass">
-                <p>나의<br/>학습현황</p>
+            <div class="section-left myClass">
+                <div class="classStatus">
+                    <p>나의<br/>학습현황</p>
+                </div>
                 <div class="yearRecord">
                     <div>
                         금년도 교육이력
@@ -79,7 +122,7 @@
                             </div>
                             <div>
                                 <span>IDP</span>
-                                <p>미수립</p>
+                                <p class="ko">미수립</p>
                             </div>
                         </div>
                     </div>
@@ -117,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="float-left weekClass">d</div>
+            <div class="section-right weekClass">d</div>
         </div>
     </div>
     <div class="section section2">

@@ -3,16 +3,10 @@
   background: url(../img/bg.png);
 }
 
-.float-left {
-  float: left;
-}
-
-.float-left:first-child {
+.section-left {
   width: 530px;
-  margin-right: 35px;
 }
-
-.float-left:last-child {
+.section-right {
   width: 425px;
 }
 
@@ -21,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.myClass > p {
+.myClass .classStatus {
   width: 175px;
   height: 194px;
   background: url(../img/myClass_red.png) no-repeat;
@@ -80,6 +74,7 @@
   width: 175px;
   height: 168px;
   background: #fff;
+  box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 .myClass .myClassList .MCItem > * {
   display: flex;
@@ -96,6 +91,31 @@
   font-weight: bold;
   color: #444;
   margin-top: 6px;
+}
+.myClass .myClassList .MCItem .MC_bottom {
+  height: 66px;
+  background: url(../img/MC_bg.png);
+  padding: 9px 0 13px;
+  color: #997c68;
+  justify-content: center;
+}
+.myClass .myClassList .MCItem .MC_bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4px;
+}
+.myClass .myClassList .MCItem .MC_bottom div span {
+  font-size: 13px;
+}
+.myClass .myClassList .MCItem .MC_bottom div p {
+  font-size: 22px;
+  font-weight: bold;
+  height: 17px;
+}
+.myClass .myClassList .MCItem .MC_bottom div p.ko {
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
