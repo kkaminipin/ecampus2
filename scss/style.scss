@@ -281,60 +281,8 @@ $blue : #475c9b;
             font-weight: bold;
 
             img {
-                margin-right: 10px;
+                margin-right: 7px;
                 display: none;
-            }
-        }
-        .PAList {
-            display: none;
-            position: absolute;
-            left: 0;
-
-            li {
-                margin: 18px 0 19px;
-                padding-left: 12px;
-                position: relative;
-                display: flex;
-
-                &::before {
-                    content: '';
-                    width: 3px;
-                    height: 3px;
-                    border-radius: 50%;
-                    background: #9a9c9e;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-
-                a {
-                    display: block;
-                    letter-spacing: -0.75px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    max-width: 375px;
-                }
-
-                button {
-                    border: 1px solid #dc5656;
-                    color: #ca5a5a;
-                    font-size: 13px;
-                    background: #fff;
-                    width: 43px;
-                    height: 20px;
-                    margin-left: 6px;
-
-                    &:first-child {
-                        margin-left: 10px;
-                    }
-
-                    &.purple {
-                        border-color: #ac4dbd;
-                        color: #9859a3;
-                    }
-                }
             }
         }
 
@@ -359,6 +307,60 @@ $blue : #475c9b;
 
 }
 
+
+.PAList {
+    display: none;
+    position: absolute;
+    left: 0;
+
+    li {
+        margin: 18px 0 19px;
+        padding-left: 12px;
+        position: relative;
+        display: flex;
+
+        &::before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #9a9c9e;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        a {
+            display: block;
+            letter-spacing: -0.75px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 375px;
+        }
+
+        button {
+            border: 1px solid #dc5656;
+            color: #ca5a5a;
+            font-size: 13px;
+            background: #fff;
+            width: 43px;
+            height: 20px;
+            margin-left: 6px;
+
+            &:first-child {
+                margin-left: 10px;
+            }
+
+            &.purple {
+                border-color: #ac4dbd;
+                color: #9859a3;
+            }
+        }
+    }
+}
+
 .MPTab {
     margin-top: 9px;
     height: 200px;
@@ -376,7 +378,7 @@ $blue : #475c9b;
 
             img {
                 fill: #444;
-                margin-right: 7px;
+                margin-right: 4px;
                 display: none;
             }
         }
@@ -395,34 +397,36 @@ $blue : #475c9b;
             }
         }
 
-        .MPList {
-            display: none;
-            position: absolute;
-            left: 0;
-            padding: 20px 0 0 35px;
-            background: #eaeef2;
-            width: 100%;
-            height: 170px;
+        
+    }
+}
 
-            li {
-                a {
-                    display: inline-flex;
-                    color: #444;
-                    margin-bottom: 20px;
-                    max-width: 375px;
+.MPList {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 20px 0 0 35px;
+    background: #eaeef2;
+    width: 100%;
+    height: 170px;
 
-                    span {
-                        font-size: 13px;
-                        width: 87px;
-                        flex-shrink: 0;
-                    }
-                    p {
-                        font-size: 15px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                }
+    li {
+        a {
+            display: inline-flex;
+            color: #444;
+            margin-bottom: 20px;
+            max-width: 375px;
+
+            span {
+                font-size: 13px;
+                width: 87px;
+                flex-shrink: 0;
+            }
+            p {
+                font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
