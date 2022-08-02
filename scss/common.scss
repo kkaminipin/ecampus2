@@ -179,3 +179,15 @@ header {
     width: 990px;
     margin: 0 auto;
 }
+
+.new {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background: #ff4949;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 1px;
+}
