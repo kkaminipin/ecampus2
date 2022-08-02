@@ -168,4 +168,9 @@ header {
   padding-bottom: 1px;
 }
 
+select {
+  appearance: none;
+  background: url("../img/selectArrow.png") no-repeat right 11px center;
+}
+
 /*# sourceMappingURL=common.css.map */
