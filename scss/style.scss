@@ -20,6 +20,7 @@ $blue : #475c9b;
         justify-content: space-between;
         font-size: 20px;
         font-weight: bold;
+        color: #444;
         padding: 15px 0;
         border-bottom: 1px solid #d8dadb;
         margin-bottom: 4.5px;
@@ -35,6 +36,10 @@ $blue : #475c9b;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .section-title {
+        color: #fff;
+    }
 
     .classStatus {
         width: 175px;
@@ -160,6 +165,7 @@ $blue : #475c9b;
 .weekClass {
     background: #fff;
     padding: 7px 35px;
+    box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.1);
     .section-title {
         img {
             color: #a7a7a7;
@@ -231,7 +237,143 @@ $blue : #475c9b;
 }
 
 .section2 {
-    .section-title {
-        font-size: 23px;
+    padding-top: 31px;
+
+    .section {
+        &-title {
+            font-size: 23px;
+        }
+
+        &-top {
+            border: 1px solid #dcdcdc;
+            box-shadow: 0px 3px 0 0 rgba(0, 0, 0, 0.05);
+
+            .section-title {
+                border: none;
+            }
+        }
+    }
+
+    .processAppli {
+        padding: 10px 35px;
+    }
+
+    .myProcess {
+        padding: 10px 35px 0 33px;
+        background: #f8fafb;
+    }
+
+    .PATab {
+        margin-top: 9px;
+        position: relative;
+        height: 200px;
+        display: flex;
+        >li {
+            >a {
+                display: block;
+                width: 230px;
+                height: 40px;
+                background: #d7dee6;
+                color: #6a7a8a;
+                font-size: 16px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: bold;
+            }
+            .PAList {
+                display: none;
+                position: absolute;
+                max-width: 458px;
+                left: 0;
+
+                li {
+                    margin: 18px 0 19px;
+                    padding-left: 12px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        background: #9a9c9e;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    a {
+                        display: block;
+                        letter-spacing: -0.75px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    button {
+                        border: 1px solid #dc5656;
+                        color: #ca5a5a;
+                        font-size: 13px;
+                        background: #fff;
+                        width: 43px;
+                        height: 20px;
+                        margin-left: 6px;
+
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+
+                        &.purple {
+                            border-color: #ac4dbd;
+                            color: #9859a3;
+                        }
+                    }
+                }
+            }
+
+            &.on {
+                >a {
+                    background: #fff;
+                    border: 3px solid $blue;
+                    border-bottom: none;
+                    line-height: 34px;
+                    color: $blue;
+                }
+
+                .PAList {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    .MPTab {
+        margin-top: 9px;
+        position: relative;
+        height: 200px;
+        display: flex;
+        >li {
+            >a {
+                display: block;
+                width: 130px;
+                height: 40px;
+                background: #d7dee6;
+                text-align: center;
+                color: #6a7a8a;
+                font-weight: bold;
+                line-height: 40px;
+                border-left: 1px solid #f8fafb;
+                font-size: 15px;
+            }
+
+            &.on {
+                >a {
+                    background: #eaeef2;
+                    color: #444444;
+                }
+            }
+        }
     }
 }
