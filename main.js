@@ -80,7 +80,6 @@ function tabOn(tabClick) {
         //선택한 .tab 안에 있는 모든 list에 클래스 on 지우기
     }
     clickedTab.parentNode.classList.add("on") //선택한 btn의 부모 list에 클래스 on 추가
-    tabClick.preventDefault(); // a 이동 안되게
 }
     
 for (i = 0; i < tabBtn.length; i++) {
