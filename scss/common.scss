@@ -84,6 +84,17 @@ header {
     }
 }
 
+nav {
+    &:hover {
+        .sub_nav {
+            display: block;
+        }
+        .subnav {
+            display: block;
+        }
+    }
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;

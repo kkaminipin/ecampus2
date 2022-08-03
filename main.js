@@ -1,46 +1,34 @@
 let navBtn = document.querySelectorAll('.nav>li>a')
 let navList = document.querySelectorAll('.nav>li')
-let subNav = document.getElementsByClassName('sub_nav')
 let subBtn = document.querySelectorAll('.sub_nav li a')
 let subList = document.querySelectorAll('.sub_nav li')
-let subBg = document.getElementsByClassName('subnav')
-
-let tab = document.querySelectorAll('.tab>li>button')
-let tabList = document.querySelectorAll('.tab>li')
-
-console.log(navBtn)
-console.log(subNav)
-console.log(subBtn)
-console.log(subBg)
 
 // 1 depth
 
 for(let i = 0; i < navBtn.length; i++) {
     (function(target){
         navBtn[target].addEventListener('mouseover', function(){
-            navSlideDown(target);
+            navOn(target);
         });
     })(i);
 }
 
-function navSlideDown(target) {
+function navOn(target) {
     for(let i = 0; i < navBtn.length; i++) {
-        subNav[i].style.display='block'
         navList[i].classList.remove('on')
     }
-    subBg[0].style.display='block'
     navList[target].classList.add('on')
 }
 
 for(let i = 0; i < navBtn.length; i++) {
     (function(target){
         navBtn[target].addEventListener('mouseleave', function(){
-            navSlideUp(target);
+            navOut(target);
         });
     })(i);
 }
 
-function navSlideUp(target) {
+function navOut(target) {
     for(let i = 0; i < navBtn.length; i++) {
         navList[i].classList.remove('on')
     }
@@ -78,34 +66,25 @@ function navClassRemove(target) {
     }
 }
 
-// 벗어났을 때
-// 닫을 수 없어................
-
-function removeBg() {
-    for(let i = 0; i < subBtn.length; i++) {
-        subNav[i].style.display = "none"
-    }
-    subBg[0].style.display = "none"
-}
-
-
-
 // 탭
-// 통합된 탭.............
 
-tabList[0].classList.add('on');
+let tabBtn = document.querySelectorAll('.tab>li>button')
+let tabList = document.querySelectorAll('.tab>li')
 
-for(let i = 0; i < tab.length; i++) {
-    (function(target){
-        tab[target].addEventListener('click', function(){
-            tabOn(target);
-        });
-    })(i);
-}
-
-function tabOn(target) {
-    for(let i = 0; i < tab.length; i++) {
-        tabList[i].classList.remove('on')
+function tabOn(tabClick) {
+    let clickedTab = tabClick.currentTarget;  // 클릭한 tabBtn
+    let tabSection = tabClick.currentTarget.parentNode.parentNode;  // 클릭한 tabBtn이 있는 .tab
+    let tabList = tabSection.querySelectorAll(".tab>li") // 선택한 .tab 안에 있는 list
+    for (let i = 0; i < tabList.length; i++) {
+        tabList[i].classList.remove("on")
+        //선택한 .tab 안에 있는 모든 list에 클래스 on 지우기
     }
-    tabList[target].classList.add('on')
+    clickedTab.parentNode.classList.add("on") //선택한 btn의 부모 list에 클래스 on 추가
+    tabClick.preventDefault(); // a 이동 안되게
+}
+    
+for (i = 0; i < tabBtn.length; i++) {
+    tabBtn[i].addEventListener("click", tabOn)
+    // 클릭했을 때 tabOn 함수 호출
+    // for문 안에 있는 이유는 querySelectorAll로 선언한 변수일 때 인덱스값을 넣어야해서
 }

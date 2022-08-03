@@ -72,6 +72,13 @@ header {
   align-items: center;
 }
 
+nav:hover .sub_nav {
+  display: block;
+}
+nav:hover .subnav {
+  display: block;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
