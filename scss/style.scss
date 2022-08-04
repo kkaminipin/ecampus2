@@ -281,7 +281,7 @@ $blue : #475c9b;
             font-weight: bold;
 
             img {
-                margin-right: 7px;
+                margin-right: 5px;
                 display: none;
             }
         }
@@ -378,7 +378,7 @@ $blue : #475c9b;
 
             img {
                 fill: #444;
-                margin-right: 4px;
+                margin-right: 2px;
                 display: none;
             }
         }
@@ -556,7 +556,7 @@ footer {
         letter-spacing: -0.65px;
         line-height: 1.5;
 
-        p {
+        >* {
             margin-bottom: 24px;
 
             &:nth-child(2) {

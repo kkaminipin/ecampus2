@@ -237,7 +237,7 @@
   font-weight: bold;
 }
 .PATab > li > button img {
-  margin-right: 7px;
+  margin-right: 5px;
   display: none;
 }
 .PATab > li.on > button {
@@ -318,7 +318,7 @@
 }
 .MPTab > li > button img {
   fill: #444;
-  margin-right: 4px;
+  margin-right: 2px;
   display: none;
 }
 .MPTab > li.on > button {
@@ -472,13 +472,13 @@ footer {
   letter-spacing: -0.65px;
   line-height: 1.5;
 }
-.footerWrap .footerDetail p {
+.footerWrap .footerDetail > * {
   margin-bottom: 24px;
 }
-.footerWrap .footerDetail p:nth-child(2) {
+.footerWrap .footerDetail > *:nth-child(2) {
   margin-bottom: 17px;
 }
-.footerWrap .footerDetail p:last-child {
+.footerWrap .footerDetail > *:last-child {
   margin-bottom: 0;
 }
 .footerWrap button {
