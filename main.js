@@ -1,9 +1,7 @@
-let navBtn = document.querySelectorAll('.nav>li>a')
-let navList = document.querySelectorAll('.nav>li')
-let subBtn = document.querySelectorAll('.sub_nav li a')
-let subList = document.querySelectorAll('.sub_nav li')
+let navBtn = document.querySelectorAll('nav ul>li>a')
+let navList = document.querySelectorAll('nav ul>li')
 
-// 1 depth
+// nav 클래스 추가
 
 for(let i = 0; i < navBtn.length; i++) {
     (function(target){
@@ -11,13 +9,6 @@ for(let i = 0; i < navBtn.length; i++) {
             navOn(target);
         });
     })(i);
-}
-
-function navOn(target) {
-    for(let i = 0; i < navBtn.length; i++) {
-        navList[i].classList.remove('on')
-    }
-    navList[target].classList.add('on')
 }
 
 for(let i = 0; i < navBtn.length; i++) {
@@ -28,48 +19,18 @@ for(let i = 0; i < navBtn.length; i++) {
     })(i);
 }
 
+function navOn(target) {
+    navList[target].classList.add('on')
+}
+
 function navOut(target) {
-    for(let i = 0; i < navBtn.length; i++) {
-        navList[i].classList.remove('on')
-    }
+    navList[target].classList.remove('on')
 }
 
-
-// 2 depth
-
-for(let i = 0; i < subBtn.length; i++) {
-    (function(target){
-        subBtn[target].addEventListener('mouseover', function(){
-            navClassAdd(target);
-        });
-    })(i);
-}
-
-function navClassAdd(target) {
-    for(let i = 0; i < subBtn.length; i++) {
-        subList[i].classList.remove('on')
-    }
-    subList[target].classList.add('on')
-}
-
-for(let i = 0; i < subBtn.length; i++) {
-    (function(target){
-        subBtn[target].addEventListener('mouseleave', function(){
-            navClassRemove(target);
-        });
-    })(i);
-}
-
-function navClassRemove(target) {
-    for(let i = 0; i < subBtn.length; i++) {
-        subList[i].classList.remove('on')
-    }
-}
 
 // 탭
 
 let tabBtn = document.querySelectorAll('.tab>li>button')
-let tabList = document.querySelectorAll('.tab>li')
 
 function tabOn(tabClick) {
     let clickedTab = tabClick.currentTarget;  // 클릭한 tabBtn
