@@ -400,12 +400,14 @@
 }
 
 .sentenceButton {
+  display: inline-block;
   width: 90px;
   height: 27px;
   background: #666a75;
   border-radius: 3px;
   color: #fff;
   font-size: 12px;
+  line-height: 27px;
 }
 
 .section3 {
@@ -452,49 +454,6 @@
   left: 0;
   bottom: -7px;
   background: rgba(255, 255, 255, 0.8);
-}
-
-footer {
-  border-top: 1px solid #d0d0d0;
-}
-
-.footerWrap {
-  width: 990px;
-  margin: 0 auto;
-  padding: 30px 0 40px;
-  display: flex;
-  position: relative;
-}
-.footerWrap .footerDetail {
-  margin: 3px 0 0 23px;
-  font-size: 13px;
-  color: #666;
-  letter-spacing: -0.65px;
-  line-height: 1.5;
-}
-.footerWrap .footerDetail > * {
-  margin-bottom: 24px;
-}
-.footerWrap .footerDetail > *:nth-child(2) {
-  margin-bottom: 17px;
-}
-.footerWrap .footerDetail > *:last-child {
-  margin-bottom: 0;
-}
-.footerWrap button {
-  position: absolute;
-  right: 0;
-  width: 168px;
-  height: 29px;
-  background: #909090;
-  border-radius: 14.5px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footerWrap button img {
-  margin-right: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,429 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCampus</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="headerWrap">
-            <div class="header_top">
-                <p>홍길동님 안녕하세요</p>
-                <select>
-                    <option selected>학습자</option>
-                    <option>교육자</option>
-                </select>
-                <ul>
-                    <li><a href="#">마이페이지</a></li>
-                    <li><a href="#">시설신청</a></li>
-                    <li><a href="#">교육도우미</a></li>
-                </ul>
-                <button class="yellow">학점안내</button>
-                <button class="yellow">로그인</button>
-                <select class="language">
-                    <option selected>Language</option>
-                    <option>한국어</option>
-                    <option>English</option>
-                </select>
-                <button class="search">
-                    <img src="img/search.png" alt="검색버튼">
-                </button>
-            </div>
-            <div class="header_bottom">
-                <div class="headerLogo">
-                    <a href="#">
-                        <img src="img/logo.png" alt="eCampus 로고">
-                    </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>eCampus</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="headerWrap">
+                <div class="header_top">
+                    <p>홍길동님 안녕하세요</p>
+                    <select>
+                        <option selected>학습자</option>
+                        <option>교육자</option>
+                    </select>
+                    <ul>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">시설신청</a></li>
+                        <li><a href="#">교육도우미</a></li>
+                    </ul>
+                    <button class="yellow">학점안내</button>
+                    <button class="yellow">로그인</button>
+                    <select class="language">
+                        <option selected>Language</option>
+                        <option>한국어</option>
+                        <option>English</option>
+                    </select>
+                    <button class="search">
+                        <img src="img/search.png" alt="검색버튼" />
+                        <img
+                            src="img/close.png"
+                            alt="검색 닫기"
+                            class="close"
+                        />
+                    </button>
+                    <div class="searchArea">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="검색어를 입력해 주세요"
+                        />
+                        <button type="submit"></button>
+                    </div>
                 </div>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">진단및계획수립</a>
-                            <ul class="sub_nav none">
-                                <li><a href="#">CDP</a></li>
-                                <li><a href="#">역량진단</a></li>
-                                <li><a href="#">IDP(학습계획수립)</a></li>
-                                <li><a href="#">부서장피드백</a></li>
+                <div class="header_bottom">
+                    <div class="headerLogo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="eCampus 로고" />
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li>
+                                <a href="#">진단및계획수립</a>
+                                <ul class="sub_nav none">
+                                    <li><a href="#">CDP</a></li>
+                                    <li><a href="#">역량진단</a></li>
+                                    <li><a href="#">IDP(학습계획수립)</a></li>
+                                    <li><a href="#">부서장피드백</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">수강신청</a>
+                                <ul class="sub_nav left">
+                                    <li><a href="#">과정검색</a></li>
+                                    <li><a href="#">외부위탁교육</a></li>
+                                    <li>
+                                        <a href="#">사내어학검정 or 어학평가</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">사외 어학/자격증신청</a>
+                                    </li>
+                                    <li><a href="#">기타학점신청</a></li>
+                                    <li><a href="#">부서원수강승인</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">학습방</a>
+                                <ul class="sub_nav">
+                                    <li><a href="#">학습중인과정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">학습커뮤니티</a>
+                                <ul class="sub_nav">
+                                    <li><a href="#">컨텐츠</a></li>
+                                    <li><a href="#">CoP</a></li>
+                                    <li><a href="#">전문가정보조회</a></li>
+                                    <li><a href="#">열린학습</a></li>
+                                    <li><a href="#">Daily외국어</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">교육통계</a>
+                                <ul class="sub_nav">
+                                    <li><a href="#">나의학습</a></li>
+                                    <li><a href="#">부서원학습</a></li>
+                                    <li><a href="#">구성원학습</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="subnav"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="section section1">
+            <div class="sectionWrap">
+                <div class="section-left myClass">
+                    <div class="classStatus">
+                        <p>나의<br />학습현황</p>
+                    </div>
+                    <div class="yearRecord">
+                        <div class="section-title">
+                            금년도 교육이력
+                            <a href="#"
+                                ><img
+                                    src="img/plus_b.png"
+                                    alt="금년도 교육이력 더보기"
+                            /></a>
+                        </div>
+                        <dl>
+                            <dt>미래원/ 집합</dt>
+                            <dd>영업 Academy - Professional</dd>
+
+                            <dt>엠트론/ 온라인</dt>
+                            <dd>프로젝트 리더 양성과정</dd>
+
+                            <dt>전선/ 집합</dt>
+                            <dd>기획 전문과정 : 사업타당...</dd>
+                        </dl>
+                    </div>
+                    <div class="myClassList">
+                        <div class="MCItem">
+                            <div class="MC_top">
+                                <img src="img/myClass1.png" alt="진단 및 IDP" />
+                                <p>진단 및 IDP</p>
+                            </div>
+                            <div class="MC_bottom">
+                                <div>
+                                    <span>진단실시</span>
+                                    <p>1</p>
+                                </div>
+                                <div>
+                                    <span>IDP</span>
+                                    <p class="ko">미수립</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MCItem">
+                            <div class="MC_top">
+                                <img
+                                    src="img/myClass2.png"
+                                    alt="커뮤니티 활동"
+                                />
+                                <p>커뮤니티 활동</p>
+                            </div>
+                            <div class="MC_bottom">
+                                <div>
+                                    <span>컨텐츠등록</span>
+                                    <p>3</p>
+                                </div>
+                                <div>
+                                    <span>CoP가입</span>
+                                    <p>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MCItem">
+                            <div class="MC_top">
+                                <img src="img/myClass3.png" alt="교육신청" />
+                                <p>교육신청</p>
+                            </div>
+                            <div class="MC_bottom">
+                                <div>
+                                    <span>사내(집합/온라인)</span>
+                                    <p>3</p>
+                                </div>
+                                <div>
+                                    <span>외부위탁</span>
+                                    <p>1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-right weekClass">
+                    <div class="section-title">
+                        금주의 학습 컨텐츠
+                        <a href="#"
+                            ><img
+                                src="img/plus.png"
+                                alt="금주의 학습 컨텐츠 더보기"
+                        /></a>
+                    </div>
+                    <div class="bookArea">
+                        <div class="imgBox">
+                            <img src="img/book.png" alt="책 표지" />
+                        </div>
+                        <div>
+                            <p class="titleArea">
+                                능력에 따른 성과보상 시스템 관리자 편견 깰
+                                시스템은 갖췄나
+                            </p>
+                            <p class="detailArea">
+                                Article at a Glance 질문 어떻게 해야 기업 내
+                                능력주의를 강화할 수 있을까? 연구를 통해 얻은
+                                해답 - 회사가 능력주의를 따른다고 믿는
+                                관리자들이 편견을 행사할 가능성이 더 크다. -
+                                능력 중심 직장을 확립하기 위해서는 커리어 관리
+                                시스템에 더 높은 책임감과 투명성이 요구된...
+                            </p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>[마케팅] 노트 3권의 비밀</span>
+                                <span class="new">N</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[마케팅] 노트 3권의 비밀</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span
+                                    >[마케팅] 노트 3권의 비밀 [마케팅] 노트
+                                    3권의 비밀 [마케팅] 노트 3권의 비밀</span
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="sectionWrap">
+                <div class="section-left section-top processAppli">
+                    <div class="section-title">
+                        과정신청
+                        <a href="#"
+                            ><img src="img/plus.png" alt="과정신청 더보기"
+                        /></a>
+                    </div>
+                    <ul class="PATab tab">
+                        <li class="on">
+                            <button>
+                                <img
+                                    src="img/tab_triangle.png"
+                                    alt="이달의 과정"
+                                />
+                                이달의 과정
+                            </button>
+                            <ul class="PAList">
+                                <li>
+                                    <a href="#"
+                                        >[Excel 실습] 원가정보를 활용한
+                                        기업경영관리실무(온라인)</a
+                                    ><button>각사</button>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >LS 그룹 임원 세미나 (집합교육)</a
+                                    ><button>그룹</button
+                                    ><button class="purple">임원</button>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >특약점 영업사업이 알아야 할 회계 및
+                                        손익관리 실무</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >과정명이 길경우 줄임 표시 됩니다.
+                                        과정명이 길경우 줄임 표시
+                                        됩니다.과정명이 길경우 줄임 표시
+                                        됩니다.과정명이 길경우 줄임 표시
+                                        됩니다.</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#">수강신청</a>
-                            <ul class="sub_nav left">
-                                <li><a href="#">과정검색</a></li>
-                                <li><a href="#">외부위탁교육</a></li>
-                                <li><a href="#">사내어학검정 or 어학평가</a></li>
-                                <li><a href="#">사외 어학/자격증신청</a></li>
-                                <li><a href="#">기타학점신청</a></li>
-                                <li><a href="#">부서원수강승인</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">학습방</a>
-                            <ul class="sub_nav">
-                                <li><a href="#">학습중인과정</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">학습커뮤니티</a>
-                            <ul class="sub_nav">
-                                <li><a href="#">컨텐츠</a></li>
-                                <li><a href="#">CoP</a></li>
-                                <li><a href="#">전문가정보조회</a></li>
-                                <li><a href="#">열린학습</a></li>
-                                <li><a href="#">Daily외국어</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">교육통계</a>
-                            <ul class="sub_nav">
-                                <li><a href="#">나의학습</a></li>
-                                <li><a href="#">부서원학습</a></li>
-                                <li><a href="#">구성원학습</a></li>
+                        <li>
+                            <button>
+                                <img
+                                    src="img/tab_triangle.png"
+                                    alt="필수/ 추천/ GP 과정"
+                                />
+                                필수/ 추천/ GP 과정
+                            </button>
+                            <ul class="PAList">
+                                <li>
+                                    <a href="#"
+                                        >[Excel 실습] 원가정보를 활용한
+                                        기업경영관리실무(온라인)</a
+                                    ><button>각사</button>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >LS 그룹 임원 세미나 (집합교육)</a
+                                    ><button>그룹</button
+                                    ><button class="purple">임원</button>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >특약점 영업사업이 알아야 할 회계 및
+                                        손익관리 실무</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >과정명이 길경우 줄임 표시 됩니다.</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                     </ul>
-                    <div class="subnav">
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div class="section section1">
-        <div class="sectionWrap">
-            <div class="section-left myClass">
-                <div class="classStatus">
-                    <p>나의<br/>학습현황</p>
                 </div>
-                <div class="yearRecord">
+
+                <div class="section-right section-top myProcess">
                     <div class="section-title">
-                        금년도 교육이력
-                        <a href="#"><img src="img/plus_b.png" alt="금년도 교육이력 더보기"></a>
+                        나의 교육과정
+                        <a href="#"
+                            ><img src="img/plus.png" alt="나의 교육과정 더보기"
+                        /></a>
                     </div>
-                    <dl>
-                        <dt>미래원/ 집합</dt>
-                        <dd>영업 Academy - Professional  </dd>
+                    <ul class="MPTab tab">
+                        <li class="on">
+                            <button>
+                                <img
+                                    src="img/tab_triangle_b.png"
+                                    alt="나의추천과정"
+                                />
+                                나의추천과정
+                            </button>
+                            <ul class="MPList">
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>성과창출을 위한 조직심리의 이해</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>재경기본과정 : 재무</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>전선/ 온라인</span>
+                                        <p>LS Techno-MBA</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>
+                                            성과창출을 위한 조직심리의 이해
+                                            성과창출을 위한 조직심리의 이해
+                                            성과창출을 위한 조직심리의 이해
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img
+                                    src="img/tab_triangle_b.png"
+                                    alt="학습중인 과정"
+                                />
+                                학습중인 과정
+                            </button>
+                            <ul class="MPList">
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>성과창출을 위한 조직심리의 이해</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>재경기본과정 : 재무</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>전선/ 온라인</span>
+                                        <p>LS Techno-MBA</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>성과창출을 위한 조직심리의 이해</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img
+                                    src="img/tab_triangle_b.png"
+                                    alt="관심과정"
+                                />
+                                관심과정
+                            </button>
+                            <ul class="MPList">
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>성과창출을 위한 조직심리의 이해</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>재경기본과정 : 재무</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>전선/ 온라인</span>
+                                        <p>LS Techno-MBA</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>미래원/ 집합</span>
+                                        <p>성과창출을 위한 조직심리의 이해</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-                        <dt>엠트론/ 온라인</dt>
-                        <dd>프로젝트 리더 양성과정 </dd>
+                <div class="section-left section-bottom notice">
+                    <div class="section-title">
+                        공지사항
+                        <a href="#"
+                            ><img src="img/plus.png" alt="공지사항 더보기"
+                        /></a>
+                    </div>
+                    <ul class="noticeList">
+                        <li>
+                            <a href="#">
+                                <span>과제제출시, 주의 사항</span>
+                                <span class="date">2016.04.15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>시스템 점검일정 알려드립니다.</span>
+                                <span class="date">2016.03.15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>1월 온라인 입과를 환영합니다.</span>
+                                <span class="date">2016.01.05</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>12월 온라인 입과를 환영합니다.</span>
+                                <span class="date">2015.12.15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>12월 온라인 입과를 환영합니다.</span>
+                                <span class="date">2015.12.15</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                        <dt>전선/ 집합</dt>
-                        <dd>기획 전문과정 : 사업타당...</dd>
-                    </dl>
+                <div class="section-right section-bottom sentence">
+                    <div class="section-title">
+                        English 클래스
+                        <a href="#"
+                            ><img
+                                src="img/plus.png"
+                                alt="English 클래스 더보기"
+                        /></a>
+                    </div>
+                    <div class="sentenceArea">
+                        <p class="englishSentence">
+                            I am writing to ask about~
+                        </p>
+                        <p class="koreanSentence">
+                            ~를 문의하기 위해 글을 씁니다.
+                        </p>
+                    </div>
+                    <a href="#" class="sentenceButton">내용보기</a>
                 </div>
-                <div class="myClassList">
-                    <div class="MCItem">
-                        <div class="MC_top">
-                            <img src="img/myClass1.png" alt="진단 및 IDP">
-                            <p>진단 및 IDP</p>
-                        </div>
-                        <div class="MC_bottom">
-                            <div>
-                                <span>진단실시</span>
-                                <p>1</p>
-                            </div>
-                            <div>
-                                <span>IDP</span>
-                                <p class="ko">미수립</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="MCItem">
-                        <div class="MC_top">
-                            <img src="img/myClass2.png" alt="커뮤니티 활동">
-                            <p>커뮤니티 활동</p>
-                        </div>
-                        <div class="MC_bottom">
-                            <div>
-                                <span>컨텐츠등록</span>
-                                <p>3</p>
-                            </div>
-                            <div>
-                                <span>CoP가입</span>
-                                <p>1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="MCItem">
-                        <div class="MC_top">
-                            <img src="img/myClass3.png" alt="교육신청">
-                            <p>교육신청</p>
-                        </div>
-                        <div class="MC_bottom">
-                            <div>
-                                <span>사내(집합/온라인)</span>
-                                <p>3</p>
-                            </div>
-                            <div>
-                                <span>외부위탁</span>
-                                <p>1</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-right weekClass">
-                <div class="section-title">
-                    금주의 학습 컨텐츠
-                    <a href="#"><img src="img/plus.png" alt="금주의 학습 컨텐츠 더보기"></a>
-                </div>
-                <div class="bookArea">
-                    <div class="imgBox">
-                        <img src="img/book.png" alt="책 표지">
-                    </div>
-                    <div>
-                        <p class="titleArea">능력에 따른 성과보상 시스템
-                            관리자 편견 깰 시스템은 
-                            갖췄나</p>
-                        <p class="detailArea">Article at a Glance 질문 어떻게 해야 기업 내 능력주의를 강화할 수 있을까? 연구를 통해 얻은 해답 - 회사가 능력주의를 따른다고 믿는 관리자들이 편견을 행사할 가능성이 더 크다. - 능력 중심 직장을 확립하기 위해서는 커리어 관리 시스템에 더 높은 책임감과 투명성이 요구된...</p>
-                    </div>
-                </div>
-                <ul>
-                    <li><a href="#">
-                        <span>[마케팅] 노트 3권의 비밀</span>
-                        <span class="new">N</span></a></li>
-                    <li><a href="#">
-                        <span>[마케팅] 노트 3권의 비밀</span>
-                    </a></li>
-                    <li><a href="#">
-                        <span>[마케팅] 노트 3권의 비밀 [마케팅] 노트 3권의 비밀 [마케팅] 노트 3권의 비밀</span>
-                    </a></li>
-                </ul>
             </div>
         </div>
-    </div>
-    <div class="section section2">
-        <div class="sectionWrap">
-
-            <div class="section-left section-top processAppli">
-                <div class="section-title">
-                    과정신청
-                    <a href="#"><img src="img/plus.png" alt="과정신청 더보기"></a>
-                </div>
-                <ul class="PATab tab">
-                    <li class="on">
-                        <button>
-                            <img src="img/tab_triangle.png" alt="이달의 과정">
-                            이달의 과정
-                        </button>
-                        <ul class="PAList">
-                            <li><a href="#">[Excel 실습] 원가정보를 활용한 기업경영관리실무(온라인)</a><button>각사</button></li>
-                            <li><a href="#">LS 그룹 임원 세미나 (집합교육)</a><button>그룹</button><button class="purple">임원</button></li>
-                            <li><a href="#">특약점 영업사업이 알아야 할 회계 및 손익관리 실무</a></li>
-                            <li><a href="#">과정명이 길경우 줄임 표시 됩니다. 과정명이 길경우 줄임 표시 됩니다.과정명이 길경우 줄임 표시 됩니다.과정명이 길경우 줄임 표시 됩니다.</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button>
-                            <img src="img/tab_triangle.png" alt="필수/ 추천/ GP 과정">
-                            필수/ 추천/ GP 과정
-                        </button>
-                        <ul class="PAList">
-                            <li><a href="#">[Excel 실습] 원가정보를 활용한 기업경영관리실무(온라인)</a><button>각사</button></li>
-                            <li><a href="#">LS 그룹 임원 세미나 (집합교육)</a><button>그룹</button><button class="purple">임원</button></li>
-                            <li><a href="#">특약점 영업사업이 알아야 할 회계 및 손익관리 실무</a></li>
-                            <li><a href="#">과정명이 길경우 줄임 표시 됩니다.</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section-right section-top myProcess">
-                <div class="section-title">
-                    나의 교육과정
-                    <a href="#"><img src="img/plus.png" alt="나의 교육과정 더보기"></a>
-                </div>
-                <ul class="MPTab tab">
-                    <li class="on">
-                        <button>
-                            <img src="img/tab_triangle_b.png" alt="나의추천과정">
-                            나의추천과정
-                        </button>
-                        <ul class="MPList">
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>재경기본과정 : 재무</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>전선/ 온라인</span>
-                                    <p>LS Techno-MBA</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해 성과창출을 위한 조직심리의 이해 성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button>
-                            <img src="img/tab_triangle_b.png" alt="학습중인 과정">
-                            학습중인 과정
-                        </button>
-                        <ul class="MPList">
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>재경기본과정 : 재무</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>전선/ 온라인</span>
-                                    <p>LS Techno-MBA</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button>
-                            <img src="img/tab_triangle_b.png" alt="관심과정">
-                            관심과정
-                        </button>
-                        <ul class="MPList">
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>재경기본과정 : 재무</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>전선/ 온라인</span>
-                                    <p>LS Techno-MBA</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>미래원/ 집합</span>
-                                    <p>성과창출을 위한 조직심리의 이해</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section-left section-bottom notice">
-                <div class="section-title">
-                    공지사항
-                    <a href="#"><img src="img/plus.png" alt="공지사항 더보기"></a>
-                </div>
-                <ul class="noticeList">
-                    <li>
-                        <a href="#">
-                            <span>과제제출시, 주의 사항</span>
-                            <span class="date">2016.04.15</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>시스템 점검일정 알려드립니다.</span>
-                            <span class="date">2016.03.15</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>1월 온라인 입과를 환영합니다.</span>
-                            <span class="date">2016.01.05</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>12월 온라인 입과를 환영합니다.</span>
-                            <span class="date">2015.12.15</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>12월 온라인 입과를 환영합니다.</span>
-                            <span class="date">2015.12.15</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="section-right section-bottom sentence">
-                <div class="section-title">
-                    English 클래스
-                    <a href="#"><img src="img/plus.png" alt="English 클래스 더보기"></a>
-                </div>
-                <div class="sentenceArea">
-                    <p class="englishSentence">I am writing to ask about~</p>
-                    <p class="koreanSentence">~를 문의하기 위해 글을 씁니다.</p>
-                </div>
-                <button class="sentenceButton">내용보기</button>
+        <div class="section3">
+            <div class="bannerWrap">
+                <a href="#">
+                    <div class="banner">
+                        <img src="img/banner1.png" alt="열린학습" />
+                        <p>열린학습</p>
+                        <span>열정, 공감, 소통으로 나누는 지식공간</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="banner">
+                        <img src="img/banner2.png" alt="북카페" />
+                        <p>Book Cafe</p>
+                        <span>최신간, 베스트, 분야별 도서를 만나는 공간</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="banner">
+                        <img
+                            src="img/banner3.png"
+                            alt="핵심 인재 양성을 위한 경영 지식 서비스 DBR"
+                        />
+                    </div>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="section3">
-        <div class="bannerWrap">
-            <a href="#">
-                <div class="banner">
-                    <img src="img/banner1.png" alt="열린학습">
-                    <p>열린학습</p>
-                    <span>열정, 공감, 소통으로 나누는 지식공간</span>
+        <footer>
+            <div class="footerWrap">
+                <div class="footerLogo">
+                    <img src="img/footerLogo.png" alt="하단 로고" />
                 </div>
-            </a>
-            <a href="#">
-                <div class="banner">
-                    <img src="img/banner2.png" alt="북카페">
-                    <p>Book Cafe</p>
-                    <span>최신간, 베스트, 분야별 도서를 만나는 공간</span>
+                <div class="footerDetail">
+                    <address>
+                        435-845 경기도 군포시 엘에스로 163 (산본동, 중산빌딩
+                        5층)
+                    </address>
+                    <p>
+                        부당한 방법으로 전산망에 접속하거나 정보를 삭제∙변경
+                        ∙유출 하는자는 관계법령에 따라 처벌을 받게 됩니다.
+                        <br />
+                        본 홈페이지에 게시된 이메일 주소가 자동수집 되는 것을
+                        거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을
+                        유념하시기 바랍니다.
+                    </p>
+                    <p>
+                        COPYRIGHT © 2016 LS Future Center. ALL RIGHTS RESERVED.
+                    </p>
                 </div>
-            </a>
-            <a href="#">
-                <div class="banner">
-                    <img src="img/banner3.png" alt="핵심 인재 양성을 위한 경영 지식 서비스 DBR">
-                </div>
-            </a>
-        </div>
-    </div>
-    <footer>
-        <div class="footerWrap">
-            <div class="footerLogo">
-                <img src="img/footerLogo.png" alt="하단 로고">
+                <a href="mailto:bsohee0206@gmail.com"
+                    ><img
+                        src="img/email.png"
+                        alt="웹 관리자에게 메일 보내기"
+                    />Mail to Webmaster</a
+                >
             </div>
-            <div class="footerDetail">
-                <address>435-845 경기도 군포시 엘에스로 163 (산본동, 중산빌딩 5층)</address>
-                <p>
-                    부당한 방법으로 전산망에 접속하거나 정보를 삭제∙변경 ∙유출 하는자는 관계법령에 따라 처벌을 받게 됩니다. <br/>
-                    본 홈페이지에 게시된 이메일 주소가 자동수집 되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. 
-                </p>
-                <p>COPYRIGHT © 2016 LS Future Center. ALL RIGHTS RESERVED.</p>
-            </div>
-            <button><img src="img/email.png" alt="웹 관리자에게 메일 보내기">Mail to Webmaster</button>
-        </div>
-    </footer>
-    
-    <script src="main.js"></script>
-</body>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
 </html>
