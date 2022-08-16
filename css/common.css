@@ -7,7 +7,6 @@ header {
   width: 990px;
   margin: 0 auto;
   padding-top: 17px;
-  position: relative;
 }
 
 .header_top {
@@ -16,6 +15,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 8px;
+  position: relative;
 }
 .header_top p {
   font-size: 12px;
@@ -84,7 +84,7 @@ header {
 .header_top .searchArea {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 33px;
   display: none;
   z-index: 1;
 }

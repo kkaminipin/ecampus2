@@ -7,7 +7,6 @@ header {
     width: 990px;
     margin: 0 auto;
     padding-top: 17px;
-    position: relative;
 }
 
 .header {
@@ -17,6 +16,7 @@ header {
         justify-content: flex-end;
         align-items: center;
         margin-bottom: 8px;
+        position: relative;
 
         p {
             font-size: 12px;
@@ -97,7 +97,7 @@ header {
             &Area {
                 position: absolute;
                 right: 0;
-                top: 50px;
+                top: 33px;
                 display: none;
                 z-index: 1;
 
